@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: white;
+    color: black;
+    height: 60px;
+    justify-content: space-between;
+    padding: 0 4rem;
+    display: flex;
+}
+ul.memu{
+    display: flex;
+}
