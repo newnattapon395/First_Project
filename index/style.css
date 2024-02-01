@@ -1,63 +1,73 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  max-width: 1380px;
+  margin: 0 auto;
 }
 
 nav{
-    border: 1px solid red;
-    background-color: white;
-    color: black;
-    height: 60px;
-    justify-content: flex-end;
-    padding: 0 4rem;
-    display: flex;
-    align-items: center;
+  padding: 1rem 1rem;
 }
-ul.menu{
-    list-style: none;
-    display: flex;
+
+.nav-c{
+  display: flex;
+  justify-content: flex-end;
 }
-ul.menu li{
-    margin: 1rem;
+
+ul.menu-nav{
+  /* border: 1px solid red; */
+  display: flex;
+  height: 50px;
+  align-items: center;
+  list-style: none;
 }
-ul.menu li a{
-    color: gray;
-    text-decoration: none;
+
+ul.menu-nav li{
+  margin-right: 1rem;
+}
+ul.menu-nav li a{
+  text-decoration: none;
+  color: rgb(107, 107, 107);
+}
+
+section{
+  display: flex;
+  height: 700px;
+  margin-top: 6rem;
+}
+.content{
+  text-align: center;
 }
 
 
-.logo-google{
-    margin-top: 6rem;
-    text-align: center;
+.search-area{
+  width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
 }
-.logo-google img{
-        width: auto;
-        height: 300px;
-        border-radius: 10%;
-        position: relative;
-        align-items: center;
-        cursor: pointer;
+.search-bar{
+  display: flex;
+  border: 1px solid #ccc;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 50px;
+}
+.search-bar:hover{
+  box-shadow: -2px 4px 10px rgb(137, 137, 137);
+}
+.search-bar i{
+  color: orange;
+  align-items: center;
 }
 
-.seach{
-  background-color: white;
+.search-bar .search-input{
+  width: 500px;
+  padding: 0.1rem;
   border: none;
-  border-radius: calc(0.5*44px);
-  color: black;
-  font-family: sans-serif;
-  font-size: inherit;
-  height: 45px;
-  outline: 0;
-  text-indent: 5px;
-  -webkit-padding-end: 44px;
-  padding-inline-end: 44px;
-  -webkit-padding-start: 52px;
-  padding-inline-start: 52px;
-  position: relative;
-  width: 420px;
-  top: 155px;
-  left: 253px;
-  box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 1px 2px rgb(0 0 0 / 23%);
-    
 }
 
