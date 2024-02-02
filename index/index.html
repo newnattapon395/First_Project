@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="javasrcipt.js">
 </head>
 
 <body>
@@ -26,60 +27,27 @@
         </div>
     </nav>
 
-    <section>
+    <main>
         <div class="container">
             <div class="content">
-                <img width="30%"
-                    src="https://cdn1.iconfinder.com/data/icons/logos-brands-in-colors/272/Google_2015_logo-512.png"
-                    alt="">
+                <img src="https://i.pinimg.com/originals/94/9a/e7/949ae750c6757cbe35b6d26a470ea7de.png" alt="">
                 <div class="search-area">
                     <div class="search-bar">
-                        <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                        <input type="text" class="search-input">
-                        <a href="#"><i class="fa fa-microphone" aria-hidden="true"></i></a>
+
+                        <form id="searchForm">
+                            <input type="text" id="searchInput" class="cus-in" placeholder="กรอกชื่อ">
+                            <button type="submit" class="cus-btn" target="_blank">Search</button>
+                        </form>
+
                     </div>
-                    <div class="search-btn-area">
-                        <a href="#" class="search-btn">ค้นหาด้วย Google</a>
-                        <a href="#" class="search-btn">ดีใจจัง ค้นแล้วเจอเลย</a>
-                    </div>
-                    <p>แสดง Google ใน: <a href="#">English</a></p>
+
                 </div>
             </div>
 
         </div>
-    </section>
+    </main>
+    <script src="javasrcipt.js"></script>
 
-    <footer>
-        <div class="footer-top">
-            <div class="container">
-                <div class="footer-fl">
-                    <p>ไทย</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="footer-b-f">
-                    <div class="footer-bottom-l">
-                        <ul>
-                            <li><a href="#">เกี่ยวกับ</a></li>
-                            <li><a href="#">โฆษณา</a></li>
-                            <li><a href="#">ธุรกิจ</a></li>
-                            <li><a href="#">วิธีการทำงานของ Search</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-bottom-r">
-                        <ul>
-                            <li><a href="#">ความเป็นส่วนตัว</a></li>
-                            <li><a href="#">ข้อกำหนด</a></li>
-                            <li><a href="#">การตั้งค่า</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 </body>
 
 </html>
