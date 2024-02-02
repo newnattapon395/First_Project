@@ -1,25 +1,25 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container{
+.container {
   max-width: 1380px;
-  margin: 0 auto;
+  margin:0 auto;
 }
 
-nav{
+nav {
   padding: 1rem 1rem;
 }
 
-.nav-c{
+.nav-c {
   display: flex;
   justify-content: flex-end;
 }
 
-ul.menu-nav{
+ul.menu-nav {
   /* border: 1px solid red; */
   display: flex;
   height: 50px;
@@ -27,56 +27,61 @@ ul.menu-nav{
   list-style: none;
 }
 
-ul.menu-nav li{
+ul.menu-nav li {
   margin-right: 1rem;
 }
-ul.menu-nav li a{
+
+ul.menu-nav li a {
   text-decoration: none;
   color: rgb(107, 107, 107);
 }
 
-section{
+section {
   display: flex;
-  height: 700px;
+  height: 600px;
   margin-top: 6rem;
 }
-.content{
+
+.content {
   text-align: center;
 }
 
 
-.search-area{
+.search-area {
   width: 650px;
   margin: 0 auto;
   padding: 1rem;
 }
-.search-bar{
+
+.search-bar {
   display: flex;
   border: 1px solid #ccc;
   justify-content: space-between;
   padding: 1rem 1rem;
   border-radius: 50px;
 }
-.search-bar:hover{
+
+.search-bar:hover {
   box-shadow: -2px 4px 10px rgb(137, 137, 137);
 }
-.search-bar i{
+
+.search-bar i {
   color: orange;
   align-items: center;
 }
 
-.search-bar .search-input{
+.search-bar .search-input {
   width: 550px;
   padding: 0.1rem;
   border: none;
 }
 
-.search-btn-area{
-  margin: 2rem ;
+.search-btn-area {
+  margin: 2rem;
 }
 
-.search-btn-area a{
-  margin: 1rem;
+.search-btn-area a {
+  margin: 1rem 0.3rem;
   padding: 0.5rem 1rem;
   color: black;
   text-decoration: none;
@@ -84,7 +89,48 @@ section{
   border-radius: 10px;
 }
 
-.search-btn-area a:hover{
+.search-btn-area a:hover {
   box-shadow: -2px 4px 10px rgb(137, 137, 137);
+}
+
+
+
+.footer-top, .footer-bottom{
+  background-color: rgb(230, 230, 230);
+  border: 1px solid rgb(170, 169, 169) ;
+  color: black;
+  height: 50px;
+}
+
+.footer-fl{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  margin: 0 1rem;
+}
+
+.footer-b-f{
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+}
+
+.footer-bottom-l ul, .footer-bottom-r ul{
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.footer-bottom-l ul li, .footer-bottom-r ul li{
+  margin:0 1rem;
+  list-style: none;
+
+}
+
+.footer-bottom-l ul li a, .footer-bottom-r ul li a{
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
 }
 
