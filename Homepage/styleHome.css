@@ -343,3 +343,40 @@ h1 span:nth-child(13) {
     padding: 2rem;
     border-radius: 50%;
 }
+
+/* --------------------------------------------------------------------------- */
+
+.ft-top-con{
+    height: 200px;
+    background-color: black;
+}
+
+.footer-top-info{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    color: #fff;
+    padding: 1rem;
+    margin: 0 5rem;
+}
+
+.f-t-info-find,
+.f-t-info-tel,
+.f-t-info-mail
+{
+    display: flex;
+    position: relative;
+}
+.footer-top-info h3{
+    font-size: 30px;
+    padding: 1rem 0;
+}
+
+.footer-top-info i{
+    display: inline-block;
+    font-size: 30px;
+    color: purple;
+    padding: 1rem;
+}
