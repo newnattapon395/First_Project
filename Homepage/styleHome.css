@@ -151,7 +151,7 @@ nav {
     animation: animate 3s linear infinite;
     border: none;
     transition: box-shadow 0.3s;
-    box-shadow: 0 5px 15px rgb(255, 255, 255,0.5);
+    box-shadow: 0 0px 20px rgb(200, 200, 200);
 
 }
 
@@ -185,13 +185,19 @@ nav {
 }
 
 .hero-con {
+    border: 1px solid rgba(255, 255, 255, 0.487);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    margin: 0 1rem;
+    
 }
 
 .hero-info {
     color: white;
+    padding: 1rem;
+    width: 600px;
+    height: auto;
 }
 
 .hero-info h3 {
@@ -219,7 +225,7 @@ nav {
 }
 
 .hero-img img {
-    width: 100%;
+    width: auto;
     height: 400px;
     padding: 2rem;
     border-radius: 50%;

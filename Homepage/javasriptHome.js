@@ -7,6 +7,6 @@ document.getElementById("searchForm").addEventListener("submit", function(event)
         var searchURL = "https://github.com/newnattapon395/First_Project/tree/main/index" + encodeURIComponent(searchTerm);
         window.location.href = searchURL;
     } else {
-        alert("กรอกใหม่อีกครั้ง");
+        alert("ไม่มีสิ่งที่หา");
     }
 });
