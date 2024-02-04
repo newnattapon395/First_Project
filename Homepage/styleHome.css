@@ -12,7 +12,7 @@
 
 
 .container {
-    max-width: 100vw;
+    max-width: 1380px;
     margin: 0 auto;
 }
 
@@ -188,7 +188,7 @@ nav {
 }
 
 .hero-con {
-    border: 1px solid rgba(255, 255, 255, 0.487);
+    /* border: 1px solid rgba(255, 255, 255, 0.487); */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -345,38 +345,198 @@ h1 span:nth-child(13) {
 }
 
 /* --------------------------------------------------------------------------- */
-
-.ft-top-con{
-    height: 200px;
+.footer-top {
+    padding: 3rem;
     background-color: black;
+    color: #fff;
 }
 
-.footer-top-info{
+.ft-top-con {
+    width: auto;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 2rem;
+}
+
+
+
+.footer-top-info {
     /* background-color: red; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 200px;
-    color: #fff;
-    padding: 1rem;
-    margin: 0 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    margin: 0 2rem;
+
 }
 
 .f-t-info-find,
 .f-t-info-tel,
-.f-t-info-mail
-{
+.f-t-info-mail {
     display: flex;
     position: relative;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+
 }
-.footer-top-info h3{
+
+.footer-top-info h3 {
     font-size: 30px;
     padding: 1rem 0;
 }
 
-.footer-top-info i{
-    display: inline-block;
+.footer-top-info i {
+    /* display: inline-block; */
     font-size: 30px;
     color: purple;
     padding: 1rem;
+}
+
+/* ------------------footermediem--------------------------- */
+
+.footer-m {
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-m-info {
+    display: grid;
+    grid-template-columns: 3fr 2fr 3fr;
+    column-gap: 6rem;
+}
+
+.footer-m-info-logo {
+    display: inline-block;
+    margin-left: 1rem;
+    padding: 0 3rem;
+
+}
+
+.footer-m-info-logo h3 {
+    font-size: 25px;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid purple;
+}
+
+.footer-m-info-logo p {
+    color: gray;
+}
+
+.footer-m-info-fol {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.footer-m-fol-emo a {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.footer-m-fol-emo i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 38px;
+}
+
+.footer-m-fol-emo a:nth-child(1) {
+    background-color: rgb(10, 69, 136);
+    text-align: center;
+
+}
+
+.footer-m-fol-emo a:nth-child(2) {
+    background-color: rgb(58, 146, 247);
+    text-align: center;
+}
+
+.footer-m-fol-emo a:nth-child(3) {
+    background-color: rgb(255, 72, 0);
+    text-align: center;
+}
+
+.use-link h3 {
+    font-size: 25px;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid purple;
+}
+
+
+.footer-m-info-link ul li {
+    display: block;
+    float: left;
+    width: 50%;
+    margin-bottom: 12px;
+    list-style: none;
+
+}
+
+.footer-m-info-link ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.footer-m-info-link ul li a:hover {
+    text-decoration: underline;
+    color: purple;
+}
+
+.footer-m-info-sup {
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-m-info-sup h3 {
+    font-size: 25px;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid purple;
+}
+
+.sub-text {
+    color: gray;
+    font-size: 13px;
+    margin-bottom: 1rem;
+}
+
+.sub-form {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.sub-form-f input {
+    width: 100%;
+    padding: 12px 20px;
+    background: #2E2E2E;
+    border: 1px solid #2E2E2E;
+    color: #fff;
+}
+
+.sub-form-f button {
+    position: absolute;
+    right: 0px;
+    background: #ff5e14;
+    padding: 11px 20px;
+    border: 1px solid #ff5e14;
+}
+
+.sub-form-f button i {
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+}
+
+/* -------------------------------footerbottom----------------------------------------- */
+
+.footer-bottom {
+    height: 60px;
+    background-color: #2E2E2E;
+    color: white;
+    text-align: center;
+    padding-top: 1.5rem;
 }
