@@ -1,109 +1,71 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-  max-width: 1380px;
-  margin:0 auto;
-}
-
-nav {
-  padding: 1rem 1rem;
-  background: palevioletred;
-}
-
-.nav-c {
-  display: flex;
-  justify-content: flex-end;
-  
-}
-
-ul.menu-nav {
-  /* border: 1px solid red; */
-  display: flex;
-  height: 50px;
-  align-items: center;
-  list-style: none;
-}
-
-ul.menu-nav li {
-  margin-right: 1rem;
-}
-
-ul.menu-nav li a {
-  text-decoration: none;
-  color: rgb(107, 107, 107);
-}
-/* ---------------------------------------------------------------------------------------- */
-main {
-  display: flex;
-  height: 815px;
-  background: url(https://cdn.pixabay.com/photo/2021/01/13/03/27/heart-5913128_640.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.content {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.content img{
-  height: 300px;
-  width: 0 auto;
-}
-
-.search-area {
-  width: 650px;
+.container{
+  max-width: 960px;
   margin: 0 auto;
-  padding: 1rem;
 }
 
-.search-bar {
-  display: flex;
-  justify-content: center;
-  padding: 1rem 1rem;
-}
-
-.search-bar .cus-in{
-  width: 400px;
-  font-size: 2rem;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-}
-
-.search-bar .cus-btn{
-  background-color: rgb(178, 243, 162);
+nav{
+  padding: 2rem;
+  background-color: gray;
   color: white;
-  padding: 0.3rem 1rem  ;
-  font-size: 1rem;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transform: 2ms;
-  transition: 2ms;
 }
 
-.cus-btn:hover{
-  background-color: rgb(169, 169, 225);
+main{
+  padding: 2rem;
+  background-color: orange;
+  height: 100vh;
+}
+
+.main-con{
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
 
 }
 
+aside{
+  width: 30%;
+  height: 100%;
+  background-color: aqua;
+}
 
+article{
+  width: 70%;
+  height: 100%;
+  background-color: aquamarine;
+}
 
+footer{
+  background-color: beige;
+  padding: 2rem;
+  text-align: center;
+}
 
+@media screen and (max-width:768px){
+  .main-con{
+    flex-direction: column;
+  }
+  aside{
+    width: 100%;
+  }
+  article{
+    width: 100%;
+  }
+}
 
-
-
-
-
-
-
-
-/* ------------------------------------------------------------------------------------ */
-
-
-
+@media screen and (max-width:480px){
+  .main-con{
+    flex-direction: column;
+  }
+  aside{
+    width: 100%;
+  }
+  article{
+    width: 100%;
+  }
+}
