@@ -78,8 +78,34 @@
 
  }
 
+ /* -----------------------------headsection---------------------------------------- */
 
+ .hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_1280.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  filter: blur(2px);
+}
 
+.hero-text {
+  color: white;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  border: 1px solid white;
+  padding: 2rem;
+}
 
 
 
