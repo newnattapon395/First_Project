@@ -17,7 +17,7 @@
 
 /* --------------nav--------------- */
  header{
-  background-color: rgb(72, 70, 70);
+  background-color: rgb(0, 0, 0);
   width: 100%;
   padding: 15px;
  }
@@ -80,32 +80,134 @@
 
  /* -----------------------------headsection---------------------------------------- */
 
- .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_1280.jpg");
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
+.sec-top{
+  background: url("https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_1280.jpg") no-repeat;
+  height: 400px;
   background-size: cover;
-  position: relative;
-  filter: blur(2px);
+  background-position: center;
+  border-image:fill 0 linear-gradient(#0003,#000) ;
+    /* แก้ที่ว่างข้างบน */
+    overflow: hidden;
+    position: relative;
 }
 
-.hero-text {
+
+.hero-image {
   color: white;
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+/* ------------------------------------------------------------------------------ */
+.sec-center{
+  background-color: #000;
+  color: #fff;
+}
+
+span.space {
+  width: 10px;
+  display: inline-block;
+}
+
+.hero-grid-con{
+  display: grid;
+  grid-template-columns: 1fr 2fr ;
+  gap: 10px;
+  justify-content: center;
+  padding: 2rem;
+  
+}
+
+.hero-img img{
+  width: 300px;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.hero-info{
   text-align: center;
 }
 
-.hero-text h1 {
-  font-size: 50px;
-  border: 1px solid white;
-  padding: 2rem;
+.hero-info span{
+  font-size: 2.5rem;
+  color: white;
+  animation: glowing 2s linear infinite;
 }
+
+@keyframes glowing {
+
+  0%,
+  100% {
+      color: #fff;
+      filter: blur(2px);
+      text-shadow: 0 0 10px #fff,
+          0 0 20px #fff,
+          0 0 40px #fff,
+          0 0 100px #fff,
+          0 0 120px #fff,
+          0 0 200px #fff,
+          0 0 400px #fff;
+  }
+
+  5%,
+  90% {
+      color: rgba(255, 255, 255, 0.238);
+      text-shadow: none;
+      filter: blur(0);
+  }
+}
+
+h1 span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+h1 span:nth-child(2) {
+  animation-delay: .05s;
+}
+
+h1 span:nth-child(3) {
+  animation-delay: 0.15s;
+}
+
+h1 span:nth-child(4) {
+  animation-delay: 0.20s;
+}
+
+h1 span:nth-child(5) {
+  animation-delay: 0.25s;
+}
+
+h1 span:nth-child(7) {
+  animation-delay: .30s;
+}
+
+h1 span:nth-child(8) {
+  animation-delay: .40s;
+}
+
+h1 span:nth-child(9) {
+  animation-delay: 0.45s;
+}
+
+h1 span:nth-child(11) {
+  animation-delay: 0.50s;
+}
+
+h1 span:nth-child(12) {
+  animation-delay: 0.55s;
+}
+
+h1 span:nth-child(13) {
+  animation-delay: 0.60s;
+}
+
 
 
 
