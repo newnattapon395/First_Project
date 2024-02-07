@@ -8,7 +8,7 @@ function scrollFunction() {
   } else {
     document.getElementById("head").style.padding = "20px 10px";
     document.getElementById("logo").style.fontSize = "35px";
-    document.getElementById("head").style.backgroundColor = "#000" ;
+    document.getElementById("head").style.backgroundColor = "rgb(0, 0, 0,0.1)" ;
 
   }
 }

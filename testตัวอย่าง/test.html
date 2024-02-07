@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css.css">
   <script src="https://kit.fontawesome.com/88dfe94bff.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 
@@ -16,20 +17,24 @@
 
   <header id="head">
     <div class="container">
-      <div class="nav-bar" id="nav-bar"><i class="fas fa-bars" onclick="showMenu()"></i></div>
+
       <a href="" class="logo" id="logo"><i class="fa fa-pie-chart"></i> NEWWEB</a>
+
+      <input type="checkbox" id="check">
+
+      <label for="check" class="nav-icon">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon"></i>
+      </label>
+
       <ul class="nav-bar">
-        <div class="times" id="times"><i class="fas fa-times" onclick="hideMenu()"></i></div>
-        <div class="logoX"><i class="fa fa-pie-chart"></i>NEWWEB</div>
+        <!-- <div class="logoX"><i class="fa fa-pie-chart"></i>NEWWEB</div> -->
         <li><a href="#">Home</a></li>
         <li><a href="#">News</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">About</a></li>
       </ul>
 
-      <div class="search">
-        <i class="fas fa-search"></i>
-      </div>
     </div>
   </header>
 

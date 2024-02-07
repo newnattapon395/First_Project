@@ -22,20 +22,17 @@ body {
 
 /* --------------nav--------------- */
 header {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0, 0.1);
+  backdrop-filter: blur(50px);
   width: 100%;
   padding: 15px;
   position: fixed;
   z-index: 99;
 }
 
-#nav-bar,
-#times {
-  display: none;
-}
 
 header .container {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   position: relative;
 }
@@ -58,11 +55,7 @@ header .container .nav-bar li a {
   color: white;
   font-size: 14px;
   margin-left: 50px;
-  text-transform: uppercase;
-}
-
-.logoX {
-  display: none;
+  /* text-transform: uppercase; */
 }
 
 header .container .nav-bar :hover {
@@ -70,13 +63,6 @@ header .container .nav-bar :hover {
   transition: all 0.1s
 }
 
-header .search {
-  position: absolute;
-  right: 0;
-  background-color: white;
-  padding: 0.5rem;
-  border-radius: 10px;
-}
 
 header .search:hover {
   color: white;
@@ -84,6 +70,20 @@ header .search:hover {
   transition: all 0.1s;
 
 }
+
+#check {
+  display: none;
+}
+
+.nav-icon {
+  color: white;
+  font-size: 2.4rem;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 5%;
+}
+
 
 /* -----------------------------headsection---------------------------------------- */
 
@@ -96,6 +96,7 @@ header .search:hover {
   /* แก้ที่ว่างข้างบน */
   overflow: hidden;
   position: relative;
+
 }
 
 
@@ -136,11 +137,11 @@ header .search:hover {
   --c2: rgba(168, 239, 255, 0.1);
 }
 
-.hero-text h1{
+.hero-text h1 {
   font-family: 'Poor Story', system-ui;
   font-size: 80px;
   font-weight: 600;
-  text-shadow: 0 0 20px white ;
+  text-shadow: 0 0 20px white;
   color: #ffffff;
 
 }
@@ -153,9 +154,9 @@ header .search:hover {
 }
 
 @keyframes borderRotate {
-	100% {
-		--angle: 420deg;
-	}
+  100% {
+    --angle: 420deg;
+  }
 }
 
 @keyframes borderRadial {
@@ -199,7 +200,6 @@ span.space {
 .hero-grid-con {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
-  grid-column: 2rem;
 }
 
 .hero-img {
@@ -367,7 +367,7 @@ h1 span:nth-child(13) {
 
 .grid-bot-col3 ul {
   padding-top: 1rem;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
 .grid-bot-col3 ul a i {
@@ -399,4 +399,171 @@ h1 span:nth-child(13) {
   background-color: gray;
   text-align: center;
   padding: 1rem;
+}
+
+/* -------------------------------------------- */
+
+
+@media screen and (max-width: 790px) {
+  .nav-icon {
+    display: inline-flex;
+  }
+
+  #check:checked~.nav-icon #menu-icon {
+    display: none;
+  }
+
+  .nav-icon #close-icon {
+    display: none;
+  }
+
+  #check:checked~.nav-icon #close-icon {
+    display: block;
+  }
+
+  .nav-bar {
+    position: absolute;
+    flex-direction: column;
+    margin-top: 1.3rem;
+    top: 100%;
+    width: 100%;
+    height: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(50px);
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+
+  .nav-bar li a {
+    display: block;
+    font-size: 1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+
+  #check:checked~.nav-bar {
+    height: 17.7rem;
+  }
+
+  .hero-info span {
+    font-size: 2rem;
+  }
+
+  .hero-info p {
+    font-size: 0.8rem;
+  }
+
+  .sec-top {
+    height: 100%;
+    /* width: 100%; */
+  }
+
+  .grid-col1-info h3,
+  .grid-col2-info h3,
+  .grid-col3-info h3 {
+    font-size: 1rem;
+  }
+
+  .grid-col1-info p,
+  .grid-col2-info p,
+  .grid-col3-info p,
+  .grid-bot-col2 p {
+    font-size: 0.7rem;
+  }
+
+  .grid-bot-log a {
+    font-size: 1.5rem;
+  }
+
+  .grid-bot-col2 h3,
+  .grid-bot-col3 h3 {
+    font-size: 1rem;
+  }
+
+  .grid-bot-col3 ul {
+    font-size: 1rem;
+  }
+
+  .footer-last p {
+    font-size: 0.8rem;
+
+  }
+
+  .hero-grid-con {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-img img {
+    padding: 1rem;
+
+  }
+
+}
+
+@media screen and (max-width: 603px) {
+
+  .container {
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+
+  .hero-text {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 5rem;
+  }
+
+  .hero-grid-con {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-image {
+    height: 26rem;
+  }
+
+  .hero-img img {
+    width: 14rem;
+    padding: 1rem;
+
+  }
+
+  .top-grid-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 3rem;
+    padding: 1rem;
+  }
+
+  .grid-col1-text-top,
+  .grid-col2-text-top,
+  .grid-col3-text-topoter {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: start;
+  }
+
+  .last-grid-footer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .grid-bot-col3{
+    grid-column: 1/3;
+    padding: 1rem;
+  }
 }
